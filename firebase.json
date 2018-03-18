@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/spa-mat",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

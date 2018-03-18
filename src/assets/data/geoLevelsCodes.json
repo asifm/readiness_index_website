@@ -1,0 +1,61 @@
+[{
+    "code": "310",
+    "name": "Core-Based Statistical Area (CBSA/MSA)"
+}, {
+    "code": "314",
+    "name": "Metropolitan Division"
+}, {
+    "code": "330",
+    "name": "Combined Statistical Area"
+}, {
+    "code": "400",
+    "name": "Urban Area"
+}, {
+    "code": "050",
+    "name": "County"
+}, {
+    "code": "060",
+    "name": "County Subdivision"
+}, {
+    "code": "160",
+    "name": "Place"
+}, {
+    "code": "020",
+    "name": "Region"
+}, {
+    "code": "030",
+    "name": "Division"
+}, {
+    "code": "040",
+    "name": "State"
+}, {
+    "code": "795",
+    "name": "Public Use Microdata Area (PUMA)"
+}, {
+    "code": "140",
+    "name": "Census Tract"
+}, {
+    "code": "150",
+    "name": "Block Group"
+}, {
+    "code": "860",
+    "name": "ZIP Code Tabulation Area"
+}, {
+    "code": "500",
+    "name": "Congressional District (111th)"
+}, {
+    "code": "610",
+    "name": "State Senate District"
+}, {
+    "code": "620",
+    "name": "State House District"
+}, {
+    "code": "950",
+    "name": "School District (Elementary)"
+}, {
+    "code": "960",
+    "name": "School District (Secondary)"
+}, {
+    "code": "970",
+    "name": "School District (Unified)"
+}]
