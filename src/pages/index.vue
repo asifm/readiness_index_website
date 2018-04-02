@@ -1,15 +1,14 @@
 <template lang="pug">
-    q-page
+    <!-- eslint-disable -->
+    q-page.full-width-bg
         q-toolbar.shadow-6.bg-primary
             big.q-ma-lg Entrepreneurial Readiness Index
         q-page
             div.row
-                div.col-6.offset-3
-                    q-card.shadow-3.q-ma-lg
-                        q-card-media.q-ma-none.q-pa-none
-                            img(src="~assets/img/virginia_map.jpg")
-                        q-card-title.bg-amber-8
-                            p Measuring the Entrepreneurial Readiness of the Census Tracts in Virginia
+                div.col-6
+                    q-card.shadow-0.q-ma-lg
+                        q-card-title.shadow-1
+                            h6.q-pa-none.q-ma-none Measuring the Entrepreneurial Readiness of Virginia Census Tracts
                         q-card-main.q-pa-md.relative-position
                             q-tree(color="red" :nodes="indicators" node-key="label").q-ma-lg
                             div.col-2.absolute-right
@@ -20,10 +19,12 @@
                                     q-card-main.q-mt-md
                                         p
                                             a(href="statics/data/Virginia_Entrepreneurial_Readiness_Index_3.7.18.xlsx"
-                                                size="md") Index (3.7.18)
+                                                size="md") Entrepreneurial Readiness Index (3.7.18)
                                         p
                                             a(href="statics/data/Visualization_Entrepreneurial_Readiness_Index_3.5.18.xlsx"
-                                                size="md") Visualization (3.5.18)
+                                                size="md") Index Visualization (3.5.18)
+
+
 </template>
 
 <style>
@@ -52,13 +53,10 @@ export default {
                     label: 'Human Capital',
                     icon: 'mdi-human',
                     children: [
-                        { label: 'Have High School Diploma (%)' },
-                        { label: "Have Bachelor's Degree (%)" },
-                        { label: 'Have Doctorate Degree (%)' },
-                        {
-                            label:
-                                'Moved in From Outside of County in Past Year (%)',
-                        },
+                        { label: 'Have high school diploma (%)' },
+                        { label: "Have bachelor's degree (%)" },
+                        { label: 'Have doctorate degree (%)' },
+                        { label: 'Moved in from outside of county in past year (%)' },
                     ],
                 },
                 {
@@ -157,6 +155,11 @@ export default {
 </script>
 
 <style scoped>
+.full-width-bg{
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0.1) 100%), url(~assets/img/va_color_map_cropped.jpg);
+    background-size: cover;
+    height: 100vh;
+}
 .q-tree {
     line-height: 1.3em;
 }
